@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Blog
+from .forms import PhotoForm
 
 def index(request):
     blogs = Blog.objects.order_by('-created_datetime')
